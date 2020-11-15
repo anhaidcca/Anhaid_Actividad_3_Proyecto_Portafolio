@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#inicio {
+    height: 70vh;
+    width: 100%;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+
+}
+
+.Navegacion {
+    height: 10vh;
+    background-color: #f0ecf7b2;
+}
+
+.navItem {
+    list-style: none;
+    font-weight: 600;
+}
+.navItem a {
+    color: #fff;
+}
+
+.navItem:hover a{
+    color: #eb9462;
+    cursor: pointer;
+}
+
+#portada {
+    height: 60vh;
+    color: #fff;
+}
+
+.portadaImagen {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+
+#sobremi {
+    height: 30vh;
+    background-color:#eb9462;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    text-align: center;
+    color: #fff;
+}
+}

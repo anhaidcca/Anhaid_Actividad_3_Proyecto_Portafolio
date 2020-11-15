@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/estilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Anhaid Cardoza</title>
 </head>
 <body>
+
    <section id="Inicio">
-    <nav>
-       <div>
+    
+    <nav class="Navegacion">
+       
+        <div>
            <ul>
-               <li><a href="#sobremi">Sobre mi</a></li>
-               <li><a href="proyectos">Proyectos</a></li>
-               <li><a href="contacto">Contacto</a></li>
+               <li class="navItem"><a href="#sobremi">Sobre mi</a></li>
+               <li class="navItem"><a href="#proyectos">Proyectos</a></li>
+               <li class="navItem"><a href="#contacto">Contacto</a></li>
            </ul>
-    </nav>
        </div>
 
-    <div id="portada">
-        <img src="img/anhaid.png" alt="Foto Anhaid" width="200px">
-        <h2>Anhaid Cardoza</h2>
-        <h3>UX/UI Designer + Frontend Developer</h3>
-   </div>
-   </section> 
+        <div id="portada">
+            <img src="img/anhaid.png" alt="Foto Anhaid" class="portadaImagen">
+            <h2>Anhaid Cardoza</h2>
+            <h3>UX/UI Designer + Frontend Developer</h3>
+        </div>
+    
+    </nav>
+  
+    </section> 
 
-   <section id="Sobre mi">
+   <section id="sobremi">
        <h2>Sobre mi</h2>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sunt fugiat? Repellat in, voluptates accusantium ratione officia saepe illo maiores aliquid! Id pariatur omnis incidunt aliquid eum, unde voluptas distinctio.</p>
    </section>
 
-   <section id="Proyectos">
+   <section id="proyectos">
        <div class="proyectotitulo">
             <h2>Proyectos</h2>
             <h3>Últimos trabajos</h3>
@@ -41,7 +47,7 @@
        </div>
    </section>
 
-   <section id="Contacto">
+   <section id="contacto">
        <h2>Contacto</h2>
        <h3>Escríbeme, trabajemos juntos</h3>
        <form action="">
