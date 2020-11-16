@@ -2,37 +2,56 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
+    /* margin: 0 auto; */
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 60px;  
+    color: #eb9462; 
+    margin: 0 auto; 
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 400;
+    color: rgb(255, 247, 234);
+    margin: 0 auto;
 }
 
 #inicio {
-    height: 70vh;
+    margin: -15px;
+    padding: 15px; 
+    height:70vh;
     width: 100%;
     background-image: url("../img/background.jpg");
     background-size: cover;
-
+    background-attachment: fixed;
 }
 
-.Navegacion {
+
+#menuInicio {
+  
+    display: flex;
+    justify-content: space-between;
+    background-attachment: fixed;
+}
+
+
+.navegacion {
     height: 10vh;
-    background-color: #f0ecf7b2;
+    display: flex;
 }
 
 .navItem {
     list-style: none;
     font-weight: 600;
+    font-size: 20px;
+    margin-right: 10px; 
 }
+
 .navItem a {
     color: #fff;
+    text-decoration:none;
 }
 
 .navItem:hover a{
@@ -42,22 +61,93 @@ h3 {
 
 #portada {
     height: 60vh;
-    color: #fff;
+    align-items: left;
+    text-align: left;
+    font-size: 200px;
+    margin-left: 50px;
 }
 
-.portadaImagen {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+#fotoAnha{
+  height: 120px;
+  width: 120px;
+  border-radius: 5%;
 }
 
-#sobremi {
-    height: 30vh;
+#sobreMi {
+    margin: -30px;
     background-color:#eb9462;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 3%;
     text-align: center;
     color: #fff;
+    height: 30vh;
+    padding: 12px 30px 0px 30px;
+
 }
+
+#fraseSobreMi {
+    margin-bottom: 15px;
 }
+
+#proyectos {
+    padding-top: 8%;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #9b9b9b;
+    margin: 8px 0 8px 0;
+}
+
+
+/* Contacto */
+
+
+#contacto{
+    margin-top: 8%;
+    background-color: #f5ae8479;
+    text-align: center;
+    color: #fff;
+    padding: 5% 10%;
+}
+
+.contactoSubtitulo {
+    margin: 8px 0;
+}
+
+.filaSuperior {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.filaSuperior input, textarea {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    border-bottom: solid 2px #eb9462;
+}
+input, textarea {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 2px 4px 2px 6px;
+}
+
+/* Boton Enviar */
+
+#btnEnviar{
+    border: 0;
+    margin-top: 3%;
+    height: 50px;
+    width: 215px;
+    background-color: #eb9462;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    background-color: #eb9462;
+    color: #fff;
+    text-align: center;
+    padding: 5% 10%;

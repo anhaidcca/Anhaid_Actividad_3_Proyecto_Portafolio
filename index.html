@@ -8,37 +8,38 @@
 </head>
 <body>
 
-   <section id="Inicio">
+   <section id="inicio">
     
-    <nav class="Navegacion">
+    <nav class="navegacion">
        
-        <div>
-           <ul>
+        <div id="barraMenu">
+           <ul id="menuInicio">
                <li class="navItem"><a href="#sobremi">Sobre mi</a></li>
                <li class="navItem"><a href="#proyectos">Proyectos</a></li>
                <li class="navItem"><a href="#contacto">Contacto</a></li>
            </ul>
        </div>
 
+    </nav>
+
         <div id="portada">
-            <img src="img/anhaid.png" alt="Foto Anhaid" class="portadaImagen">
+        
             <h2>Anhaid Cardoza</h2>
             <h3>UX/UI Designer + Frontend Developer</h3>
+            <img src="img/anhaid.png" alt="Foto Anhaid" id="fotoAnha">
         </div>
-    
-    </nav>
   
     </section> 
 
-   <section id="sobremi">
-       <h2>Sobre mi</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sunt fugiat? Repellat in, voluptates accusantium ratione officia saepe illo maiores aliquid! Id pariatur omnis incidunt aliquid eum, unde voluptas distinctio.</p>
+   <section id="sobreMi">
+       <h3 id="fraseSobreMi">Sobre mi</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, alias laborum labore aperiam excepturi suscipit deleniti neque? At cumque dicta laboriosam ab nam quos, praesentium, aliquid magni blanditiis sequi porro nesciunt ipsum odio magnam ad eveniet totam maiores eligendi sed eaque asperiores optio enim dignissimos vitae. Maiores, officiis eum fugiat voluptatem inventore optio laborum in illo animi eveniet eius nihil dolor placeat enim perspiciatis facere nesciunt mollitia accusantium impedit ducimus!</p>
    </section>
 
    <section id="proyectos">
-       <div class="proyectotitulo">
+       <div class="proyectoTitulo">
             <h2>Proyectos</h2>
-            <h3>Últimos trabajos</h3>
+            <h3 class="subtitulo">Últimos trabajos</h3>
        </div>
        <div class="">
         <img src="img/book.jpg" alt="img1-libro">
@@ -48,24 +49,23 @@
    </section>
 
    <section id="contacto">
-       <h2>Contacto</h2>
-       <h3>Escríbeme, trabajemos juntos</h3>
-       <form action="">
-        <label for="Name"> Nombre: </label>
-        <input type="text" name="Name" placeholder="Nombre" />
-        <br>
-        <label for="Email">Email:</label>
-        <input type="email" name="Email" placeholder="Email"/>
-        <br>
-        <label for="Subject">Asunto: </label>
-        <input type="text" name="Subject" placeholder="Asunto"/>
-        <br>
-        <label for="Comment">Comentario:</label>
-        <textarea rows="1" name="Comment" placeholder="Comentarios..."></textarea>
-        <br>
-        <input type="submit" value="Enviar" />
+       <div id="contactoTitulos"></div>
+            <h2>Contacto</h2>
+            <h3 class="subtitulo">Escríbeme, trabajemos juntos</h3>
+        </div>
 
+        <form>
+            <div class="filaSuperior">
+                 <input type="text" id="nombre" placeholder="Nombre">
+                 <input type="email" id="email" placeholder="ejemplo@correo.com">
+                 <input type="text" id="asunto" placeholder="Asunto">
+            </div>
+            <div class="filaInferior">
+                 <textarea name="mensaje" id="mensaje" cols="30" rows="1" placeholder="Mensaje"></textarea>
+            </div>
+            <input id="btnEnviar" type="submit">
        </form>
+       
    </section>
    <footer>
        <p>©Copyright 2020 Anhaid Cardoza. Todos los derechos reservados.</p>
