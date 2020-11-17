@@ -10,29 +10,25 @@
 
    <section id="inicio">
     
-    <nav class="navegacion">
-       
-        <div id="barraMenu">
-           <ul id="menuInicio">
-               <li class="navItem"><a href="#sobremi">Sobre mi</a></li>
-               <li class="navItem"><a href="#proyectos">Proyectos</a></li>
-               <li class="navItem"><a href="#contacto">Contacto</a></li>
-           </ul>
-       </div>
-
-    </nav>
+        <nav class="navegacion">
+            <ul class="lista">
+                <li class="navItem"><a href="#sobremi">Sobre mi</a></li>
+                <li class="navItem"><a href="#proyectos">Proyectos</a></li>
+                <li class="navItem"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
 
         <div id="portada">
-        
             <h2>Anhaid Cardoza</h2>
-            <h3>UX/UI Designer + Frontend Developer</h3>
-            <img src="img/anhaid.png" alt="Foto Anhaid" id="fotoAnha">
+            <h3>Graphic & UX/UI Designer + Frontend Developer</h3>
+            <!-- <a id="btnContacto" href="#contacto">¡Contáctame!</a> -->
         </div>
   
     </section> 
 
    <section id="sobreMi">
        <h3 id="fraseSobreMi">Sobre mi</h3>
+       <img src="img/anhaid.png" alt="Foto Anhaid" id="fotoAnha" >
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, alias laborum labore aperiam excepturi suscipit deleniti neque? At cumque dicta laboriosam ab nam quos, praesentium, aliquid magni blanditiis sequi porro nesciunt ipsum odio magnam ad eveniet totam maiores eligendi sed eaque asperiores optio enim dignissimos vitae. Maiores, officiis eum fugiat voluptatem inventore optio laborum in illo animi eveniet eius nihil dolor placeat enim perspiciatis facere nesciunt mollitia accusantium impedit ducimus!</p>
    </section>
 
@@ -41,17 +37,35 @@
             <h2>Proyectos</h2>
             <h3 class="subtitulo">Últimos trabajos</h3>
        </div>
-       <div class="">
-        <img src="img/book.jpg" alt="img1-libro">
-        <img src="./img/phone.jpg" alt="img2-app">
-        <img src="./img/tea.jpg" alt="img3-tea">
-       </div>
+       <div class="proyectosImg">
+            
+            <div class="caja">
+                <img src="img/book.jpg" alt="img1-libro">
+                <div class="capa">
+                    <h2>Proyecto 1</h2>
+                </div>
+            </div>
+
+             <div class="caja">
+                <img src="./img/phone.jpg" alt="img2-app">
+                <div class="capa"></div>
+                    <h2>Proyecto 2</h2>
+                </div>
+            </div>
+            
+            <div class="caja">
+                <img src="./img/tea.jpg" alt="img3-tea">
+                <div>
+                    <h2>Proyecto3</h2>
+                </div>
+            </div>
+        </div>
    </section>
 
    <section id="contacto">
-       <div id="contactoTitulos"></div>
-            <h2>Contacto</h2>
-            <h3 class="subtitulo">Escríbeme, trabajemos juntos</h3>
+       <div class="contactoTitulos"></div>
+            <h2 class="contactoTitulo">Contacto</h2>
+            <h3 class="contactoSubtitulo">Escríbeme, trabajemos juntos</h3>
         </div>
 
         <form>
@@ -60,15 +74,22 @@
                  <input type="email" id="email" placeholder="ejemplo@correo.com">
                  <input type="text" id="asunto" placeholder="Asunto">
             </div>
+            
             <div class="filaInferior">
                  <textarea name="mensaje" id="mensaje" cols="30" rows="1" placeholder="Mensaje"></textarea>
             </div>
             <input id="btnEnviar" type="submit">
-       </form>
-       
+       </form>    
    </section>
+
    <footer>
-       <p>©Copyright 2020 Anhaid Cardoza. Todos los derechos reservados.</p>
-   </footer>
+       <div class="titulosFooter">
+            <p>©Copyright 2020 Anhaid Cardoza. Todos los derechos reservados.</p>
+        </div>
+        <div class="iconosFooter">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

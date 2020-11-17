@@ -1,22 +1,26 @@
+/* Importación de la fuente */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
 
+
+/* Estilos generales */
 * {
     font-family: 'Montserrat', sans-serif;
-    /* margin: 0 auto; */
+    margin: 0;
 }
 
 h2 {
     font-size: 60px;  
     color: #eb9462; 
-    margin: 0 auto; 
 }
 
 h3 {
     font-size: 30px;
     font-weight: 400;
     color: rgb(255, 247, 234);
-    margin: 0 auto;
 }
+
+
+/* Inicio */
 
 #inicio {
     margin: -15px;
@@ -28,36 +32,40 @@ h3 {
     background-attachment: fixed;
 }
 
-
-#menuInicio {
-  
-    display: flex;
-    justify-content: space-between;
-    background-attachment: fixed;
-}
-
+/* Navegacion */
 
 .navegacion {
     height: 10vh;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
 }
 
 .navItem {
     list-style: none;
     font-weight: 600;
     font-size: 20px;
-    margin-right: 10px; 
 }
 
 .navItem a {
     color: #fff;
     text-decoration:none;
+    transition: all 0.3s ease;
 }
 
 .navItem:hover a{
     color: #eb9462;
     cursor: pointer;
 }
+
+/* Portada */
 
 #portada {
     height: 60vh;
@@ -67,11 +75,13 @@ h3 {
     margin-left: 50px;
 }
 
+/* Sobre mi */
+
 #fotoAnha{
-  height: 120px;
-  width: 120px;
-  border-radius: 5%;
-}
+    height: 120px;
+    width: 120px;
+    border-radius: 5%;
+  }
 
 #sobreMi {
     margin: -30px;
